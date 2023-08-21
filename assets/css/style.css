@@ -26,3 +26,11 @@
     display: flex; /* Utilizza il layout flessibile */
     justify-content: space-between; /* Spaziatura uniforme tra gli elementi, distribuiti lungo la riga */
 }
+
+/* Stile per l'elemento con classe .logo */
+.logo{
+    position: relative; /* Imposta la posizione relativa per l'elemento */
+    width: 120px; /* Larghezza dell'elemento */
+    height: 100% /* Altezza del 100% rispetto al genitore dell'elemento */
+
+}
