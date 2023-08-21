@@ -32,5 +32,12 @@
     position: relative; /* Imposta la posizione relativa per l'elemento */
     width: 120px; /* Larghezza dell'elemento */
     height: 100% /* Altezza del 100% rispetto al genitore dell'elemento */
+}
 
+/* Stile per l'immagine all'interno dell'elemento con classe .logo  */
+.logo > img{
+    position: absolute; /* Imposta la posizione assoluta per l'immagine */
+    left: 50%; /* Posiziona l'immagine a metà larghezza dell'elemento genitore */
+    top: 50%; /* Posiziona l'immagine a metà altezza dell'elemento genitore */
+    transform: translate(-50%, -50%); /* Trasla l'immagine all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
 }
