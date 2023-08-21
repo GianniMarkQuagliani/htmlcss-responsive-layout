@@ -107,3 +107,51 @@
     }
 
 }
+
+@media screen and (min-width: 1200px) {
+    .row-menu{
+        max-width: 1170px;
+    }
+    .globalnav-list{
+        display: block;
+    }
+    .globalnav{
+        min-width: 500px;
+    }
+    .row{
+        max-width: 1170px;
+    }
+}
+
+
+.row{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.s-first{
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+
+.s-second{
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+
+.s-third{
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+
+.s-fourth{
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+
+.s-fifth{
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
