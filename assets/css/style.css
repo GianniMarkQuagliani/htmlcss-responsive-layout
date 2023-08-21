@@ -41,3 +41,25 @@
     top: 50%; /* Posiziona l'immagine a metà altezza dell'elemento genitore */
     transform: translate(-50%, -50%); /* Trasla l'immagine all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
 }
+
+/* Stile per l'elemento con classe .globalnav */
+.globalnav{ 
+    width: 10%; /* Larghezza del 10 % rispetto al contenitore genitore */
+    height: 100%; /* Altezza del 100% rispetto al contenitore genitore */
+    position: relative;
+}
+
+/* Stile per i link all'interno dell'elemento con classe .globalnav-list */
+.globalnav-list a{
+    color: white; /* Colore del testo dei link bianco */
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+}
+
+/* Stile per la lista non ordinata all'interno dell'elemento con classe .globalnav-list */
+.globalnav-list ul{
+    list-style: none; /* Rimuove i bullet points dalla lista */
+    position: absolute; /* Imposta la posizione assoluta per la lista */
+    right: -45%; /* Posiziona la lista a 45% della larghezza a destra del suo contenitore */
+    top: 50%; /* Posiziona la lista a metà altezza del suo contenitore */
+    transform: translate(-50%, -50%); /* Trasla la lista all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
+}
