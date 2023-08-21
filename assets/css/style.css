@@ -46,7 +46,6 @@
 .globalnav{ 
     width: 10%; /* Larghezza del 10 % rispetto al contenitore genitore */
     height: 100%; /* Altezza del 100% rispetto al contenitore genitore */
-    position: relative;
 }
 
 /* Stile per i link all'interno dell'elemento con classe .globalnav-list */
@@ -62,4 +61,49 @@
     right: -45%; /* Posiziona la lista a 45% della larghezza a destra del suo contenitore */
     top: 50%; /* Posiziona la lista a metà altezza del suo contenitore */
     transform: translate(-50%, -50%); /* Trasla la lista all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
+}
+
+/* Stile per l'elemento con classe .globalnav */
+.globalnav{
+    width: 10%; /* Larghezza del 10% rispetto al contenitore genitore */
+    height: 100%; /* Altezza del 100% rispetto al contenitore genitore */
+}
+
+/* Stile per l'elemento con classe .globalnav-list */
+.globalnav-list{
+    width: 100%; /* Larghezza del 100% rispetto al contenitore genitore */
+    height: 100%; /* Altezza del 100% rispetto al contenitore genitore */
+    display: none; /* Nasconde l'elemento .globalnav-list di default */
+    position: relative; /* Imposta la posizione relativa per l'elemento */
+}
+
+/* Stile per la lista non ordinata all'interno dell'elemento .globalnav-list */
+.globalnav-list ul{
+    list-style: none; /* Rimuove i bullet points dalla lista */
+    position: absolute; /* Imposta la posizione assoluta per la lista */
+    right: -45%; /* Posiziona la lista a 45% della larghezza a destra del suo contenitore */
+    top: 50%; /* Posiziona la lista a metà altezza del suo contenitore */
+    transform: translate(-50%, -50%); /* Trasla la lista all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
+}
+
+/* Stile per ogni elemento di lista all'interno dell'elemento .globalnav-list */
+.globalnav-list li{
+    display: inline-block;  /* Mostra gli elementi di lista in linea */
+    margin-left: 20px; /* Aggiunge uno spazio a sinistra tra gli elementi */
+}
+
+/* Stile per i link all'interno dell'elemento .globalnav-list */
+.globalnav-list a{
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+}
+
+/* Stili per dimensioni diverse usando un media query */
+@media screen and (min-width: 990px){
+    .globalnav-list{
+        display: block; /* Mostra l'elemento .globalnav-list sopra i 991px di larghezza dello schermo */
+    }
+    .globalnav{
+        min-width: 500px; /* Imposta una larghezza minima di 500px per l'elemento .globalnav */
+    }
+
 }
