@@ -97,61 +97,104 @@
     text-decoration: none; /* Rimuove la sottolineatura dei link */
 }
 
+
+/* DESKTOP  */
 /* Stili per dimensioni diverse usando un media query */
-@media screen and (min-width: 990px){
+@media screen and (min-width: 991px){
     .globalnav-list{
         display: block; /* Mostra l'elemento .globalnav-list sopra i 991px di larghezza dello schermo */
     }
     .globalnav{
         min-width: 500px; /* Imposta una larghezza minima di 500px per l'elemento .globalnav */
     }
-
+    .col-s2{
+        width: calc(50% - 20px) /* Imposta la larghezza delle colonne a 50% meno 20px di spaziatura */
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .row-menu{
-        max-width: 1170px;
+        max-width: 1170px; /* Limita la larghezza massima della riga del menu */
     }
-    .globalnav-list{
-        display: block;
-    }
-    .globalnav{
-        min-width: 500px;
-    }
+
     .row{
-        max-width: 1170px;
+        max-width: 1170px; /* Limita la larghezza massima delle righe */
+    }
+
+    .globalnav-list{
+        display: block; /* Mostra l'elemento .globalnav-list sopra i 1200px di larghezza dello schermo */
+    }
+
+    .globalnav{
+        min-width: 500px; /* Imposta una larghezza minima di 500px per l'elemento .globalnav */
     }
 }
 
 
+
+/* SECTION FIRST  */
 .row{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    background-color: red; /* Sfondo rosso per le righe */
+    display: flex; /* Utilizza il layout flessibile */
+    flex-direction: column; /* Imposta la direzione delle colonne all'interno delle righe */
+    margin: auto; /* Margine automatico orizzontale per centrare le righe */
 }
 
 .s-first{
-    background-color: lightgray;
-    margin-bottom: 50px;
+    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-first" */
+    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
 }
 
+.col-double, .col-s1{
+    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
+    background-color: white; /* Sfondo bianco per le colonne */
+    height: 450px; /* Altezza delle colonne */
+    margin: 10px; /* Margine di 10px per le colonne */
+    border-radius: 25px; /* Bordi arrotondati delle colonne */
+}
+
+/* SECTION SECOND  */
 .s-second{
-    background-color: lightgray;
-    margin-bottom: 50px;
+    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-second" */
+    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
 }
 
+.col-s2{
+    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
+    background-color: white; /* Sfondo bianco per le colonne */
+    height: 450px; /* Altezza delle colonne */
+    margin: 10px; /* Margine di 10px per le colonne */
+    border-radius: 35px; /* Bordi arrotondati delle colonne */
+}
+
+/* SECTION THIRD  */
 .s-third{
-    background-color: lightgray;
-    margin-bottom: 50px;
+    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-third" */
+    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
+}
+.col-s3{
+    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
+    background-color:white; /* Sfondo bianco per le colonne */
+    height: 450px; /* Altezza delle colonne */
+    margin: 10px; /* Margine di 10px per le colonne */
+    border-radius: 35px; /* Bordi arrotondati delle colonne */
 }
 
+/* SECTION FOURTH  */
 .s-fourth{
-    background-color: lightgray;
-    margin-bottom: 50px;
+    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-fourth" */
+    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
+}
+.col-s4{
+    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
+    background-color: white; /* Sfondo bianco per le colonne */
+    height: 450px; /* Altezza delle colonne */
+    margin: 10px; /* Margine di 10px per le colonne */
+    border-radius: 25px; /* Bordi arrotondati delle colonne */
 }
 
+/* SECTION FIFTH  */
 .s-fifth{
-    background-color: lightgray;
-    margin-bottom: 50px;
+    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-fifth" */
+    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
 }
