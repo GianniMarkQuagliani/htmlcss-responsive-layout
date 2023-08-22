@@ -148,6 +148,11 @@
 }
 
 
+/* FOOTER */
+.s-sith{
+    background-color: lightgray;
+}
+
 
 /* DESKTOP */
 /* Stili per dimensioni diverse usando un media query */
