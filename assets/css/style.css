@@ -6,73 +6,69 @@
 }
 
 
-/* Stile per il contenitore dell'header */
-/* HEADER  */
+
+/* UTILIS  */
+/* Stili per il layout flessibile */
+.flex{
+    display: flex;
+}
+
+/* Imposta le dimensioni massime del contenitore e lo centra horizontalmente */
 .container{
-    background-color: blue; /* Sfondo blu per il contenitore */
-    height: 75px; /* Altezza dell'header */
-    max-width: 100%; /* Larghezza massima del contenitore */
-    margin: auto; /* Margine automatico orizzontale, per centrare il contenitore */
-    margin-bottom: 30px; /* Margine inferiore di 30px */
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-.row-menu{
-    height: 100%; /* Altezza del 100% dell'header */
-    margin: 0 auto; /* Margine automatico orizzontale, per centrare la riga */
-    max-width: 450px; /* Larghezza massima della riga del menu */
-    align-items: center; /* Allineamento verticale al centro degli elementi */
-    display: flex; /* Utilizza il layout flessibile */
-    justify-content: space-between; /* Spaziatura uniforme tra gli elementi, distribuiti lungo la riga */
+
+
+/* HEADER  */
+/* Stili per l'intestazione del sito */
+header{
+    color: white;
+    background-color: #0084fd;
+    margin-bottom: 30px;
 }
 
-/* Stile per l'elemento con classe .logo */
-.logo{
-    position: relative; /* Imposta la posizione relativa per l'elemento */
-    width: 120px; /* Larghezza dell'elemento */
-    height: 100%; /* Altezza del 100% rispetto al genitore dell'elemento */
-    
+/* Allinea il contenuto dell'intestazione e crea spazio tra gli elementi */
+header .container{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
-/* Stile per l'immagine all'interno dell'elemento con classe .logo  */
-.logo > img{
-    position: absolute; /* Imposta la posizione assoluta per l'immagine */
-    left: 50%; /* Posiziona l'immagine a metà larghezza dell'elemento genitore */
-    top: 50%; /* Posiziona l'immagine a metà altezza dell'elemento genitore */
-    transform: translate(-50%, -50%); /* Trasla l'immagine all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
+/* Stili per l'icona dei menu a scomparsa */
+header .fa-bars{
+    font-size: 18px;
 }
 
-/* Stile per l'elemento con classe .globalnav */
-.globalnav{
-    width: 10%; /* Larghezza del 10 % rispetto al contenitore genitore */
-    height: 100%; /* Altezza del 100% rispetto al contenitore genitore */
+/* Stili per i link del menu di navigazione */
+.nav-menu a{
+    text-decoration: none;
+    color: white;
 }
 
-/* Stile per i link all'interno dell'elemento con classe .globalnav-list */
-.globalnav-list a{
-    text-decoration: none; /* Rimuove la sottolineatura dei link */
-    color: white; /* Colore del testo dei link bianco */
+/* Stili per ciascun elemento della lista del menu */
+.nav-menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+ 
+/* Stili per l'ultimo elemento della lista del menu */
+.nav-menu ul li:last-child{
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
 }
 
-/* Stile per la lista non ordinata all'interno dell'elemento con classe .globalnav-list */
-.globalnav-list ul{
-    list-style: none; /* Rimuove i bullet points dalla lista */
-    position: absolute; /* Imposta la posizione assoluta per la lista */
-    right: -45%; /* Posiziona la lista a 45% della larghezza a destra del suo contenitore */
-    top: 50%; /* Posiziona la lista a metà altezza del suo contenitore */
-    transform: translate(-50%, -50%); /* Trasla la lista all'indietro del 50% della sua larghezza e altezza rispetto a se stessa */
+/* Stili per il pulsante nell'intestazione del menu */
+.nav-menu #h-button{
+    color: black;
 }
 
-.globalnav-list{
-    width: 100%; /* Larghezza del 100% rispetto al contenitore genitore */
-    height: 100%; /* Altezza del 100% rispetto al contenitore genitore */
-    display: none; /* Nasconde l'elemento .globalnav-list di default */
-    position: relative; /* Imposta la posizione relativa per l'elemento */
-}
-
-/* Stile per ogni elemento di lista all'interno dell'elemento .globalnav-list */
-.globalnav-list li{
-    display: inline-block; /* Mostra gli elementi di lista in linea */
-    margin-left: 20px; /* Aggiunge uno spazio a sinistra tra gli elementi */
+/* Nasconde inizialmente il menu di navigazione */
+.nav-menu{
+    display: none;
 }
 
 .row{
@@ -157,12 +153,8 @@
 /* DESKTOP */
 /* Stili per dimensioni diverse usando un media query */
 @media screen and (min-width: 991px) {
-    .globalnav-list{
-        display: block; /* Mostra l'elemento .globalnav-list sopra i 991px di larghezza dello schermo */
-    }
-
-    .globalnav{
-        min-width: 500px; /* Imposta una larghezza minima di 500px per l'elemento .globalnav */
+    .header .nav-menu{
+        display: block; /* Mostra l'elemento .nav-menu sopra i 991px di larghezza dello schermo */
     }
 
     .col-s2{
@@ -178,34 +170,19 @@
 
 /* LARGE DESKTOP */
 @media screen and (min-width: 1200px) {
-    .row-menu{
-        max-width: 1170px; /* Limita la larghezza massima della riga del menu */
-    }
 
     .row{
         max-width: 1170px; /* Limita la larghezza massima delle righe */
     }
 
-    .globalnav-list{
-        display: block; /* Mostra l'elemento .globalnav-list sopra i 1200px di larghezza dello schermo */
-    }
-
-    .globalnav{
-        min-width: 500px; /* Imposta una larghezza minima di 500px per l'elemento .globalnav */
+    .nav-menu{
+        display: block; /* Mostra l'elemento .nav-menu sopra i 1200px di larghezza dello schermo */
     }
 }
 
 /* Stile applicato quando la larghezza dello schermo è di almeno 768px */
 /* TABLET */
 @media screen and (min-width: 768px) {
-    .row-menu{
-        max-width: 750px; /* Imposta la larghezza massima del contenitore dell'header a 750px */
-    }
-
-    .globalnav-list{
-        display: none; /* Nasconde l'elenco di navigazione globale */
-    }
-
     .row{
         /* Imposta il layout flessibile per le righe e avvolgi le colonne quando lo spazio è insufficiente */
         flex-direction: row; 
@@ -230,5 +207,9 @@
     .col-s4{
         /* Imposta la larghezza delle colonne a metà della larghezza totale meno 20px di spaziatura */
         width: calc(100% / 2 - 20px)
+    }
+
+    header .fa-bars {
+        display: none;
     }
 }
