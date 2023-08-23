@@ -352,10 +352,37 @@ header .fa-bars{
 
 
 
-/* FIVE SECTION */
-.s-fifth{
-    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-fifth" */
-    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
+/* FIFTH SECTION */
+/* Stili per il titolo nella quinta sezione */
+.s-fifth h2{
+    color: #9792e4; /* Colore del testo */
+}
+
+/* Applica margini sopra e sotto a tutti gli elementi figli diretti della quinta sezione */
+.s-fifth > *{
+    margin: 30px 0; /* Margini verticali sopra e sotto */
+}
+
+/* Stili per le immagini all'interno del blocco "About Us 2" */
+.about-us2 img{
+    max-width: 50%; /* Massima larghezza dell'immagine */
+    border-radius: 100%; /* Arrotondamento dei bordi per creare un aspetto circolare */
+}
+
+/* Stili per il paragrafo con classe "answer" all'interno del blocco "About Us 2" */
+.about-us2 .answer{
+    margin: 30px 0; /* Margini verticali sopra e sotto */
+    font-size: 20px; /* Dimensione del testo */
+    color: var(--second-color); /* Colore del testo */
+    font-weight: bold; /* Grassetto */
+}
+
+/* Stili per i link all'interno del blocco "About Us 2" */
+.about-us2 a{
+    background-color: var(--second-color); /* Colore di sfondo */
+    padding: 10px; /* Spaziatura interna all'interno del link */
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuovi la sottolineatura del testo */
 }
 
 
@@ -443,5 +470,27 @@ header .fa-bars{
         align-items: center; /* Allinea gli elementi figlio al centro lungo l'asse verticale */
         flex-wrap: wrap; /* Abilita il wrapping degli elementi figlio su righe multiple se necessario */
         gap: 10px; /* Aggiunge uno spazio di 10px tra gli elementi figlio lungo l'asse orizzontale */
+    }
+
+    /* Stili per il contenitore nella quinta sezione */
+    .s-fifth .container{
+        flex-direction: row; /* Allinea gli elementi in una riga */
+        align-items: center; /* Allinea verticalmente gli elementi al centro */
+        justify-content: space-between; /* Spaziatura uniforme tra gli elementi lungo l'asse orizzontale */
+    }
+    
+    /* Stili per il blocco "About Us" */
+    .about-us{
+        width: 60%; /* Larghezza dell'elemento */
+    }
+    
+    /* Stili per il blocco "About Us 2" */
+    .about-us2{
+        width: 30%; /* Larghezza dell'elemento */
+    }
+    
+    /* Stili per le immagini all'interno del blocco "About Us 2" */
+    .about-us2 img{
+        max-width: 100%; /* Massima larghezza dell'immagine */
     }
 }
