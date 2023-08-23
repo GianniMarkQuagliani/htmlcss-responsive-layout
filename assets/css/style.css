@@ -101,15 +101,6 @@ header .fa-bars{
 
 
 
-.row{
-    background-color: red; /* Sfondo rosso per le righe */
-    display: flex; /* Utilizza il layout flessibile */
-    flex-direction: column; /* Imposta la direzione delle colonne all'interno delle righe */
-    margin: auto; /* Margine automatico orizzontale per centrare le righe */
-}
-
-
-
 /* MAIN  */
 /* FIRST SECTION */
 .s-first{
@@ -160,16 +151,68 @@ header .fa-bars{
 
 /* SECTION SECTION   */
 .s-second{
-    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-second" */
-    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
+    background-color: #9792e4;
+    margin-top: 100px;
+    padding: 50px 0;
 }
 
-.col-s2{
-    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
-    background-color:white; /* Sfondo bianco per le colonne */
-    height: 450px; /* Altezza delle colonne */
-    margin: 10px; /* Margine di 10px per le colonne */
-    border-radius: 35px; /* Bordi arrotondati delle colonne */
+#strategic-planning h2{
+    color: white;
+    padding-bottom: 40px;
+    font-size: 28px;
+}
+
+#strategic-planning p{
+    color: white;
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+
+#first-planning-image{
+    max-width: 100%;
+    width: 500px;
+    padding: 40px 0;
+}
+
+#app-development{
+    margin-top: 50px;
+    background-color: white;
+    min-height: 650px;
+    border-radius: 55px;
+}
+
+#app-development h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 35px;
+}
+
+#app-development p{
+    font-style: italic;
+    text-align: center;
+    padding-bottom:40px;
+    padding: 0 35px;
+    font-size: 18px;
+}
+
+#container-second-planning-image{
+    text-align: center;
+}
+
+#flex-icon{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#download-icon{
+    background-color:#9792e4 ;
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+
+.fa-arrow-down{
+    font-size: 20px;
 }
 
 
@@ -227,11 +270,7 @@ header .fa-bars{
     .header .nav-menu{
         display: block; /* Mostra l'elemento .nav-menu sopra i 991px di larghezza dello schermo */
     }
-
-    .col-s2{
-        width: calc(50% - 20px)  /* Imposta la larghezza delle colonne a 50% meno 20px di spaziatura */
-    }
-
+    
     .col-s4{
         width: calc(100% / 3 - 20px) /* Calcola la larghezza come un terzo della larghezza totale meno 20px di spaziatura */
     }
