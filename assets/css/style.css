@@ -387,10 +387,102 @@ header .fa-bars{
 
 
 
-/* FOOTER */
-.s-sith{
-    background-color: lightgray;
+
+/* PRE FOOTER  */
+/* Stili per la sezione pre-footer */
+.pre-footer{
+    background-color: #9792e4; /* Colore di sfondo */
+    padding: 50px 0; /* Spaziatura interna sopra e sotto */
 }
+
+/* Stili per il blocco "Get Started" */
+.get-started{
+    text-align: center; /* Allineamento del testo al centro */
+}
+
+.get-started h3{
+    color: white; /* Colore del testo */
+    padding-bottom: 50px; /* Spazio sotto il titolo */
+    font-size: 32px; /* Dimensione del testo */
+}
+
+.get-started h2{
+    color: rgb(255, 192, 102); /* Colore del testo */
+    font-size: 48px; /* Dimensione del testo */
+    padding-bottom: 50px; /* Spazio sotto il titolo */
+}
+
+.get-started p{
+    color: white; /* Colore del testo */
+    padding-bottom: 50px; /* Spazio sotto il paragrafo */
+}
+
+.get-started button{
+    color: #9792e4; /* Colore del testo */
+    padding: 20px 60px; /* Spaziatura interna */
+    font-size: 18px; /* Dimensione del testo */
+}
+
+.get-started div{
+    padding: 50px 40px; /* Spaziatura interna */
+    color: white; /* Colore del testo */
+    font-size: 15px; /* Dimensione del testo */
+}
+
+.get-started div a{
+    color: white; /* Colore del testo */
+}
+
+/* Stili per il titolo nella sezione pre-footer */
+.pre-footer-title{
+    color: #bbb8ee; /* Colore del testo */
+    padding-bottom: 30px; /* Spazio sotto il titolo */
+    font-size: 18px; /* Dimensione del testo */
+}
+
+/* Stili per l'icona a cerchio */
+.fa-circle{
+    font-size: 10px; /* Dimensione dell'icona */
+}
+
+
+
+/* FOOTER */
+/* Stili per la sezione footer */
+.footer{
+    background-color: #333333; /* Colore di sfondo */
+}
+
+/* Stili per le sezioni nel footer */
+.footer-section{
+    display: flex; /* Mostra gli elementi in un layout flessibile */
+    flex-direction: column; /* Allineamento dei figli in colonna */
+    justify-content: center; /* Allinea verticalmente al centro */
+    align-items: center; /* Allinea orizzontalmente al centro */
+    gap: 3rem; /* Spazio tra le sezioni */
+    padding: 3rem; /* Spaziatura interna */
+}
+
+/* Stili per i paragrafi all'interno delle sezioni nel footer */
+.footer-section p{
+    color: white; /* Colore del testo */
+    text-align: center; /* Allineamento del testo al centro */
+    width: 50%; /* Larghezza del paragrafo */
+}
+
+/* Stili per il testo dei link nel footer */
+.links{
+    color: white; /* Colore del testo */
+}
+
+/* Stili per i link all'interno dei paragrafi nel footer */
+.links a{
+    color: #9792E4; /* Colore del testo del link */
+}
+
+
+
+
 
 
 
