@@ -19,32 +19,38 @@
     margin: 0 auto;
 }
 
+/* Classe per disporre elementi in una colonna verticale */
 .f-column{
     flex-direction: column;
 }
 
+/* Classe per impostare un raggio di bordo di 40 pixel */
 .br-40{
     border-radius: 40px;
 }
 
+/* Stili per i paragrafi */
 p{
-    line-height: 150%;
-    color: rgb(101, 124, 142);
-    font-weight: bold;
+    line-height: 150%; /* Altezza della riga al 150% */
+    color: rgb(101, 124, 142); /* Colore del testo */
+    font-weight: bold; /* Testo in grassetto */
 }
 
+/* Stili per i titoli di livello 4 */
 h4{
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Dimensione del carattere */
 }
 
+/* Classe per allineare il testo al centro */
 .text-align{
-    text-align: center;
-    margin: 20px 0;
+    text-align: center; /* Allinea il testo al centro orizzontalmente */
+    margin: 20px 0; /* Margine sopra e sotto di 20 pixel */
 }
 
+/* Stili per le icone "awesome-icon" */
 .awesome-icon{
-    font-size: 100px;
-    color: #0084fd;
+    font-size: 100px; /* Dimensione del carattere */
+    color: #0084fd; /* Colore dell'icona */
 }
 
 
@@ -107,129 +113,185 @@ header .fa-bars{
     margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
 }
 
+/* Stili per i titoli h4 all'interno di .s-first */
 .s-first h4{
-    color: #0084fd;
+    color: #0084fd; /* Cambia il colore del testo in azzurro */
 }
 
+/* Stili per le colonne .col-s1 */
 .col-s1{
-    background-color: rgb(177, 220, 254);
-    padding: 30px;
+    background-color: rgb(177, 220, 254);  /* Colore di sfondo */
+    padding: 30px; /* Spaziatura interna */
 }
 
+/* Stili per il contenuto all'interno delle colonne .col-s1 */
 .col-s1 .col-s1-content{
-    padding: 20px 0;
+    padding: 20px 0; /* Spaziatura interna verticale */
 }
 
+/* Stili per i link all'interno delle colonne .col-s1 */
 .col-s1 a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: white; /* Cambia il colore del testo dei link */
 }
 
+/* Stili per le immagini all'interno delle colonne .col-s1 */
 .col-s1 img{
-    max-width: 100%;
+    max-width: 100%; /* Impedisce alle immagini di superare la larghezza del loro contenitore */
 }
 
-.col-s1:first-child {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+/* Stile per la prima colonna .col-s1 */
+.col-s1:first-child{
+    border-top-right-radius: 20px; /* Angoli arrotondati in alto a destra */
+    border-top-left-radius: 20px; /* Angoli arrotondati in alto a sinistra */
 }
 
+/* Stile per la seconda colonna .col-s1 */
 .col-s1:nth-child(2){
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; /* Angoli arrotondati in basso a destra */
+    border-bottom-left-radius: 20px; /* Angoli arrotondati in basso a sinistra */
 }
 
+/* Stili per i bottoni all'interno delle colonne .col-s1 */
 .col-s1 .col-s1-button{
-    background-color: #0084fd;
-    padding: 7px;
-    width: 70%;
-    text-align: center;
+    background-color: #0084fd; /* Colore di sfondo dei bottoni */
+    padding: 7px; /* Spaziatura interna dei bottoni */
+    width: 70%; /* Larghezza dei bottoni */
+    text-align: center; /* Allineamento del testo al centro nei bottoni */
 }
 
 
 
 
-/* SECTION SECTION   */
+/* SECOND SECTION   */
+/* Stili per la seconda sezione */
 .s-second{
-    background-color: #9792e4;
-    margin-top: 100px;
-    padding: 50px 0;
+    background-color: #9792e4; /* Colore di sfondo */
+    margin-top: 100px; /* Margine superiore */
+    padding: 50px 0; /* Spaziatura interna */
 }
 
+/* Stili per il titolo h2 all'interno di #strategic-planning */
 #strategic-planning h2{
-    color: white;
-    padding-bottom: 40px;
-    font-size: 28px;
+    color: white; /* Colore del testo */
+    padding-bottom: 40px; /* Spaziatura inferiore */
+    font-size: 28px; /* Dimensione del carattere */
 }
 
+/* Stili per il paragrafo all'interno di #strategic-planning */
 #strategic-planning p{
-    color: white;
-    font-size: 17px;
-    padding-bottom: 40px;
+    color: white; /* Colore del testo */
+    font-size: 17px; /* Dimensione del carattere */
+    padding-bottom: 40px; /* Spaziatura inferiore */
 }
 
+/* Stili per l'immagine #first-planning-image */
 #first-planning-image{
-    max-width: 100%;
-    width: 500px;
-    padding: 40px 0;
+    max-width: 100%; /* Impedisce alle immagini di superare la larghezza del contenitore */
+    width: 500px; /* Larghezza dell'immagine */
+    padding: 40px 0; /* Spaziatura superiore e inferiore */
 }
 
+/* Stili per la sezione #app-development */
 #app-development{
-    margin-top: 50px;
-    background-color: white;
-    min-height: 650px;
-    border-radius: 55px;
+    margin-top: 50px; /* Margine superiore */
+    background-color: white; /* Colore di sfondo */
+    min-height: 650px; /* Altezza minima */
+    border-radius: 55px; /* Angoli arrotondati */
 }
 
+/* Stili per il titolo h3 all'interno di #app-development */
 #app-development h3{
-    text-align: center;
-    font-size: 25px;
-    padding-bottom: 35px;
+    text-align: center; /* Allineamento del testo al centro */
+    font-size: 25px; /* Dimensione del carattere */
+    padding-bottom: 35px; /* Spaziatura inferiore */
 }
 
+/* Stili per il paragrafo all'interno di #app-development */
 #app-development p{
-    font-style: italic;
-    text-align: center;
-    padding-bottom:40px;
-    padding: 0 35px;
-    font-size: 18px;
+    font-style: italic; /* Stile del testo in corsivo */
+    text-align: center; /* Allineamento del testo al centro */
+    padding: 0 35px; /* Spaziatura orizzontale */
+    font-size: 18px; /* Dimensione del carattere */
+    padding-bottom: 40px; /* Spaziatura inferiore */
 }
 
+/* Stili per il contenitore dell'immagine #container-second-planning-image */
 #container-second-planning-image{
-    text-align: center;
+    text-align: center; /* Allineamento del testo al centro */
 }
 
+/* Stili per il contenitore flessibile #flex-icon */
 #flex-icon{
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
+    display: flex; /* Display flessibile */
+    justify-content: center; /* Allineamento orizzontale al centro */
+    padding: 30px 0; /* Spaziatura superiore e inferiore */
 }
 
+/* Stili per l'icona di download #download-icon */
 #download-icon{
-    background-color:#9792e4 ;
-    border-radius: 50%;
-    padding: 10px 20px;
+    background-color: #9792e4; /* Colore di sfondo */
+    border-radius: 50%; /* Angoli arrotondati per creare un cerchio */
+    padding: 10px 20px; /* Spaziatura interna */
 }
 
+/* Stili per l'icona .fa-arrow-down */
 .fa-arrow-down{
-    font-size: 20px;
+    font-size: 20px; /* Dimensione del carattere */
 }
 
 
 
-/* THIRD SECTION */
-.s-third{
-    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-third" */
-    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
+
+/* THIRD SECTION   */
+/* Stili per la terza sezione */
+.s-third .container{
+    margin-bottom: 50px; /* Margine inferiore */
 }
 
+/* Stili per la sezione testimonial */
+.testimonial{
+    padding: 50px 0; /* Spaziatura interna */
+    text-align: center; /* Allineamento del testo al centro */
+}
+
+.testimonial > *{
+    padding: 20px 0; /* Spaziatura interna sopra e sotto */
+}
+
+/* Stili per il titolo h3 all'interno di .testimonial */
+.testimonial h3{
+    color: #9792e4; /* Colore del testo */
+}
+
+/* Stili per le immagini all'interno della terza sezione */
+.s-third img{
+    max-width: 100%; /* Impedisce alle immagini di superare la larghezza del contenitore */
+    width: 50%; /* Larghezza dell'immagine */
+    border-radius: 100%; /* Angoli arrotondati per creare un cerchio */
+    margin: auto; /* Allinea l'immagine al centro orizzontalmente */
+}
+
+/* Stili per il contenitore .col-s3 */
 .col-s3{
-    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
-    background-color:white; /* Sfondo bianco per le colonne */
-    height: 450px; /* Altezza delle colonne */
-    margin: 10px; /* Margine di 10px per le colonne */
-    border-radius: 35px; /* Bordi arrotondati delle colonne */
+    background-color: #9792e4; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    padding: 20px; /* Spaziatura interna */
+    margin: 20px 0; /* Margine sopra e sotto */
 }
+
+/* Stili per il testo all'interno di .col-s3 */
+.col-s3 > *{
+    padding: 10px 0; /* Spaziatura interna sopra e sotto */
+    text-align: center; /* Allineamento del testo al centro */
+}
+
+/* Stili per il testo in grassetto .name */
+.name{
+    font-weight: bold; /* Testo in grassetto */
+    color: white; /* Colore del testo */
+}
+
 
 
 
@@ -297,17 +359,39 @@ header .fa-bars{
 /* Stile applicato quando la larghezza dello schermo è di almeno 768px */
 /* TABLET */
 @media screen and (min-width: 768px) {
+    /* Cambia la direzione dei flex items della classe .row in orizzontale e abilita il wrapping */
     .s-first .row{
         flex-direction: row;
         flex-wrap: wrap;
     }
 
+     /* Imposta la larghezza e il margine delle colonne .col-s1 all'interno della classe .s-first */
     .col-s1{
-        width: calc(100% / 3 - 20px);
-        margin: 10px;
+        width: calc(100% / 3 - 20px); /* Larghezza delle colonne, con margine tra di esse */
+        margin: 10px; /* Margine delle colonne */
     }
 
+    /* Nasconde l'icona del menu nella sezione dell'intestazione */
     header .fa-bars{
         display: none;
+    }
+
+    /* Cambia la direzione, allineamento orizzontale e verticale dei flex items nella classe .col-s3 */
+    .col-s3{
+        flex-direction: row; 
+        justify-content: space-between; /* Allineamento orizzontale spaziato */
+        align-items: center; /* Allineamento verticale al centro */
+    }
+    
+    /* Imposta l'allineamento del testo a sinistra e il padding nella classe .col-s3 */
+    .col-s3 p{
+        text-align: start; /* Allineamento del testo a sinistra */
+        padding: 0 30px; /* Spaziatura orizzontale */
+        color: white; /* Colore del testo */
+    }
+
+    /* Modifica la spaziatura interna della classe .testimonial */
+    .testimonial{
+        padding: 0; /* Rimuove la spaziatura interna */
     }
 }
