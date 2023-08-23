@@ -296,17 +296,58 @@ header .fa-bars{
 
 
 /* FOURTH SECTION */
+/* Stili per la quarta sezione */
 .s-fourth{
-    background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-fourth" */
-    margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
+    background-color: #9792e4; /* Colore di sfondo */
+    padding: 50px 0; /* Spaziatura interna superiore e inferiore */
 }
 
+/* Stili per l'elemento con classe .benefits */
+.benefits{
+    width: 85%; /* Larghezza dell'elemento */
+    margin: 0 auto; /* Margine automatico orizzontale per centrare l'elemento */
+    font-size: 38px; /* Dimensione del carattere */
+    color: white; /* Colore del testo */
+    text-align: center; /* Allineamento del testo al centro */
+    line-height: 180%; /* Altezza della riga */
+}
+
+/* Stili per le colonne .col-s4 */
 .col-s4{
-    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
-    background-color: white; /* Sfondo bianco per le colonne */
-    height: 450px; /* Altezza delle colonne */
-    margin: 10px; /* Margine di 10px per le colonne */
-    border-radius: 25px; /* Bordi arrotondati delle colonne */
+    min-height: 450px; /* Altezza minima dell'elemento */
+    background-color: white; /* Colore di sfondo */
+    border-radius: 45px; /* Angoli arrotondati */
+    margin-top: 50px; /* Margine superiore */
+}
+
+/* Stili per il titolo h3 all'interno delle colonne .col-s4 */
+.col-s4 h3{
+    color: #9792e4; /* Colore del testo */
+    padding-left: 35px; /* Spaziatura sinistra */
+    padding-bottom: 50px; /* Spaziatura inferiore */
+    font-size: 28px; /* Dimensione del carattere */
+}
+
+/* Stili per i paragrafi all'interno delle colonne .col-s4 */
+.col-s4 p{
+    color: grey; /* Colore del testo */
+    padding: 0 35px 50px 35px; /* Spaziatura: 0 in alto, 35px a destra, 50px in basso, 35px a sinistra */
+}
+
+/* Stili per i pulsanti all'interno delle colonne .col-s4 */
+.col-s4 button{
+    margin: 0 0 50px 35px; /* Margine: 0 in alto, 0 a destra, 50px in basso, 35px a sinistra */
+    background-color: #9792e4; /* Colore di sfondo del pulsante */
+    color: white; /* Colore del testo */
+    padding: 13px 55px; /* Spaziatura interna */
+    font-size: 17px; /* Dimensione del carattere */
+}
+
+/* Stili per il testo con classe .number */
+.number{
+    color: #9792e4; /* Colore del testo */
+    font-size: 65px; /* Dimensione del carattere */
+    padding: 50px 35px; /* Spaziatura interna: 50px in alto, 35px a destra e sinistra */
 }
 
 
@@ -393,5 +434,14 @@ header .fa-bars{
     /* Modifica la spaziatura interna della classe .testimonial */
     .testimonial{
         padding: 0; /* Rimuove la spaziatura interna */
+    }
+
+    /* Stili per il contenitore flessibile con ID #benefits-row */
+    #benefits-row{
+        display: flex; /* Abilita il display flessibile */
+        justify-content: space-between; /* Spaziatura uniforme tra gli elementi figlio lungo l'asse orizzontale */
+        align-items: center; /* Allinea gli elementi figlio al centro lungo l'asse verticale */
+        flex-wrap: wrap; /* Abilita il wrapping degli elementi figlio su righe multiple se necessario */
+        gap: 10px; /* Aggiunge uno spazio di 10px tra gli elementi figlio lungo l'asse orizzontale */
     }
 }
