@@ -19,6 +19,34 @@
     margin: 0 auto;
 }
 
+.f-column{
+    flex-direction: column;
+}
+
+.br-40{
+    border-radius: 40px;
+}
+
+p{
+    line-height: 150%;
+    color: rgb(101, 124, 142);
+    font-weight: bold;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.text-align{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.awesome-icon{
+    font-size: 100px;
+    color: #0084fd;
+}
+
 
 
 /* HEADER  */
@@ -71,6 +99,8 @@ header .fa-bars{
     display: none;
 }
 
+
+
 .row{
     background-color: red; /* Sfondo rosso per le righe */
     display: flex; /* Utilizza il layout flessibile */
@@ -79,27 +109,60 @@ header .fa-bars{
 }
 
 
+
 /* MAIN  */
 /* FIRST SECTION */
 .s-first{
-    background-color: lightgrey; /* Sfondo grigio chiaro per la sezione "s-first" */
     margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
 }
 
-.col-double, .col-s1{
-    width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
-    background-color: white; /* Sfondo bianco per le colonne */
-    height: 450px; /* Altezza delle colonne */
-    margin: 10px; /* Margine di 10px per le colonne */
-    border-radius: 25px; /* Bordi arrotondati delle colonne */
+.s-first h4{
+    color: #0084fd;
 }
+
+.col-s1{
+    background-color: rgb(177, 220, 254);
+    padding: 30px;
+}
+
+.col-s1 .col-s1-content{
+    padding: 20px 0;
+}
+
+.col-s1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.col-s1 img{
+    max-width: 100%;
+}
+
+.col-s1:first-child {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.col-s1:nth-child(2){
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.col-s1 .col-s1-button{
+    background-color: #0084fd;
+    padding: 7px;
+    width: 70%;
+    text-align: center;
+}
+
+
+
 
 /* SECTION SECTION   */
 .s-second{
     background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-second" */
     margin-bottom: 50px; /* Margine inferiore di 50px per la sezione */
 }
-
 
 .col-s2{
     width: calc(100% - 20px); /* Imposta la larghezza delle colonne a 100% meno 20px di spaziatura */
@@ -108,6 +171,8 @@ header .fa-bars{
     margin: 10px; /* Margine di 10px per le colonne */
     border-radius: 35px; /* Bordi arrotondati delle colonne */
 }
+
+
 
 /* THIRD SECTION */
 .s-third{
@@ -123,6 +188,8 @@ header .fa-bars{
     border-radius: 35px; /* Bordi arrotondati delle colonne */
 }
 
+
+
 /* FOURTH SECTION */
 .s-fourth{
     background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-fourth" */
@@ -137,6 +204,8 @@ header .fa-bars{
     border-radius: 25px; /* Bordi arrotondati delle colonne */
 }
 
+
+
 /* FIVE SECTION */
 .s-fifth{
     background-color: lightgray; /* Sfondo grigio chiaro per la sezione "s-fifth" */
@@ -144,10 +213,12 @@ header .fa-bars{
 }
 
 
+
 /* FOOTER */
 .s-sith{
     background-color: lightgray;
 }
+
 
 
 /* DESKTOP */
@@ -168,6 +239,8 @@ header .fa-bars{
     
 }
 
+
+
 /* LARGE DESKTOP */
 @media screen and (min-width: 1200px) {
 
@@ -180,36 +253,22 @@ header .fa-bars{
     }
 }
 
+
+
 /* Stile applicato quando la larghezza dello schermo è di almeno 768px */
 /* TABLET */
 @media screen and (min-width: 768px) {
-    .row{
-        /* Imposta il layout flessibile per le righe e avvolgi le colonne quando lo spazio è insufficiente */
-        flex-direction: row; 
+    .s-first .row{
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .col-double{
-        /* Imposta la larghezza delle colonne a due terzi della larghezza totale meno 20px di spaziatura */
-        width: calc(100% / 3 * 2 - 20px);
-    }
-
     .col-s1{
-        /* Imposta la larghezza delle colonne singole a un terzo della larghezza totale meno 20px di spaziatura */
-        width: calc(100% / 3 - 20px)
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
     }
 
-    .col-s2{
-        /* Imposta la larghezza delle colonne singole a 100% della larghezza totale meno 20px di spaziatura */
-        width: calc(100% - 20px)
-    }
-
-    .col-s4{
-        /* Imposta la larghezza delle colonne a metà della larghezza totale meno 20px di spaziatura */
-        width: calc(100% / 2 - 20px)
-    }
-
-    header .fa-bars {
+    header .fa-bars{
         display: none;
     }
 }
